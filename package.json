@@ -7,9 +7,9 @@
   "main": "lib/FishCrontab.umd.min.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:small-stone/vue-crontab.git"
+    "url": "git@github.com:wait-fish/FishCrontab.git"
   },
-  "homepage": "https://small-stone.github.io/vCrontab/dist/",
+  "homepage": "https://github.com/wait-fish/FishCrontab/dist/",
   "keywords": [
     "cron",
     "vue",
