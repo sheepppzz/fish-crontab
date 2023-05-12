@@ -1,0 +1,36 @@
+{
+  "name": "FishCrontab",
+  "version": "0.3.5",
+  "description": "vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次的符合条件时间",
+  "author": "等鱼",
+  "license": "MIT",
+  "main": "lib/FishCrontab.umd.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:small-stone/vue-crontab.git"
+  },
+  "homepage": "https://small-stone.github.io/vCrontab/dist/",
+  "keywords": [
+    "cron",
+    "vue",
+    "vue2",
+    "vuecron",
+    "crontab",
+    "vue-crontab",
+    "FishCrontab"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name FishCrontab --dest lib src/index.js"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
