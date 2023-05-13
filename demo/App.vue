@@ -9,6 +9,7 @@
         @hide="showCron=false"
         @fill="crontabFill"
         :expression="expression"
+        fiveTimes
       ></FishCrontab>
     </el-dialog>
   </div>

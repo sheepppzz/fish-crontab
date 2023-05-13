@@ -69,23 +69,24 @@ export default {
 		radioChange() {
 			if (this.radioValue === 1) {
 				this.$emit('update', 'week', '*');
-			} else {
-				if (this.cron.mouth === '*') {
-					this.$emit('update', 'mouth', '0', 'week');
-				}
-				if (this.cron.day === '*') {
-					this.$emit('update', 'day', '0', 'week');
-				}
-				if (this.cron.hour === '*') {
-					this.$emit('update', 'hour', '0', 'week');
-				}
-				if (this.cron.min === '*') {
-					this.$emit('update', 'min', '0', 'week');
-				}
-				if (this.cron.second === '*') {
-					this.$emit('update', 'second', '0', 'week');
-				}
-			}
+			} 
+			// else {
+			// 	if (this.cron.mouth === '*') {
+			// 		this.$emit('update', 'mouth', '0', 'week');
+			// 	}
+			// 	if (this.cron.day === '*') {
+			// 		this.$emit('update', 'day', '0', 'week');
+			// 	}
+			// 	if (this.cron.hour === '*') {
+			// 		this.$emit('update', 'hour', '0', 'week');
+			// 	}
+			// 	if (this.cron.min === '*') {
+			// 		this.$emit('update', 'min', '0', 'week');
+			// 	}
+			// 	if (this.cron.second === '*') {
+			// 		this.$emit('update', 'second', '0', 'week');
+			// 	}
+			// }
 			switch (this.radioValue) {
 				case 2:
 					this.$emit('update', 'week', '?');

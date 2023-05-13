@@ -32,7 +32,7 @@
         />
       </el-tab-pane>
 
-      <el-tab-pane label="月" v-if="shouldHide('mouth')">
+      <el-tab-pane label="月" v-if="shouldHide('month')">
         <CrontabMouth
           @update="updateContabValue"
           :check="checkNumber"
@@ -94,7 +94,7 @@ import CrontabSecond from "./Crontab-Second.vue";
 import CrontabMin from "./Crontab-Min.vue";
 import CrontabHour from "./Crontab-Hour.vue";
 import CrontabDay from "./Crontab-Day.vue";
-import CrontabMouth from "./Crontab-Mouth.vue";
+import CrontabMouth from "./Crontab-Month.vue";
 import CrontabWeek from "./Crontab-Week.vue";
 import CrontabYear from "./Crontab-Year.vue";
 import CrontabResult from "./Crontab-Result.vue";
@@ -121,7 +121,7 @@ export default {
         }, 
         {
           name: "月",
-          prop: "mouth" 
+          prop: "month" 
         }, 
         {
           name: "周",
@@ -139,7 +139,7 @@ export default {
         min: "*",
         hour: "*",
         day: "*",
-        mouth: "*",
+        month: "*",
         week: "?",
         year: "",
       },
@@ -176,7 +176,7 @@ export default {
             min: arr[1],
             hour: arr[2],
             day: arr[3],
-            mouth: arr[4],
+            month: arr[4],
             week: arr[5],
             year: arr[6] || "",
           };
@@ -208,7 +208,7 @@ export default {
     },
     //赋值到组件
     changeRadio(name, value) {
-      let arr = ["second", "min", "hour", "mouth"],
+      let arr = ["second", "min", "hour", "month"],
         refName = "cron" + name,
         insVlaue;
       if (!this.$refs[refName]) return;
@@ -337,7 +337,7 @@ export default {
         min: "*",
         hour: "*",
         day: "*",
-        mouth: "*",
+        month: "*",
         week: "?",
         year: "",
       };
@@ -358,7 +358,7 @@ export default {
         " " +
         obj.day +
         " " +
-        obj.mouth +
+        obj.month +
         " " +
         obj.week +
         (obj.year ? " " + obj.year : "");

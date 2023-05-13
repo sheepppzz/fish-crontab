@@ -13,6 +13,11 @@ vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次
 在原版基础上新增是否显示最近五次的符合条件时间
 修改隐藏某个项的逻辑
 修改了重置的逻辑
+
+# 依赖
++ Vue 2.0.0+
++ element-ui 2.0.0+
+
 ## 安装方式
 
 ```
@@ -22,6 +27,12 @@ npm install fish-crontab
 ## 引入方式
 
 ```javascript
+//前置配置
+import Vue from 'vue'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
+
 //全局引入
 import FishCrontab from "fish-crontab";
 Vue.use(FishCrontab); //使用方式：<vcrontab></vcrontab>
