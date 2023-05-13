@@ -40,7 +40,7 @@ export default {
             <el-button type="primary" @click="showDialog">生成 cron</el-button>
         </div>
         <el-dialog title="生成 cron" :visible.sync="showCron">
-            <vcrontab @hide="showCron=false" @fill="crontabFill" :expression="expression"></vcrontab>
+            <FishCrontab @hide="showCron=false" @fill="crontabFill" :expression="expression"></FishCrontab>
         </el-dialog>
     </div>
 </template>
@@ -79,7 +79,7 @@ export default {
   需要隐藏的组件数组，依次为`['second','min','hour','day','month','week','year']`
 
 - fiveTimes
-  是否显示最近五次执行时间 默认为 false
+  是否显示最近五次执行时间 默认为`false`
 
 ## 方法
 
