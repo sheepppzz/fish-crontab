@@ -16,18 +16,18 @@ vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次
 ## 安装方式
 
 ```
-npm install FishCrontab
+npm install fish-crontab
 ```
 
 ## 引入方式
 
 ```javascript
 //全局引入
-import FishCrontab from "FishCrontab";
+import FishCrontab from "fish-crontab";
 Vue.use(FishCrontab); //使用方式：<vcrontab></vcrontab>
 
 //单独引入
-import FishCrontab from "FishCrontab";
+import FishCrontab from "fish-crontab";
 export default {
   components: { FishCrontab },
 };
@@ -49,7 +49,7 @@ export default {
 </template>
 
 <script>
-import FishCrontab from 'FishCrontab'
+import FishCrontab from 'fish-crontab'
 export default {
     components: { FishCrontab },
     data() {
