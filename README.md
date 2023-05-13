@@ -1,4 +1,4 @@
-# [demo](https://github.com/wait-fish/FishCrontab/dist/)
+# [demo](https://wait-fish.github.io/FishCrontab/dist/)
 
 ![](public/demo.png)
 
