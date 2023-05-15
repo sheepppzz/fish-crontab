@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git@github.com:wait-fish/fish-crontab.git"
   },
-  "homepage": "https://github.com/wait-fish/fish-crontab/dist/",
+  "homepage": "https://wait-fish.github.io/fish-crontab/dist/",
   "keywords": [
     "cron",
     "vue",
