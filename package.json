@@ -2,14 +2,14 @@
   "name": "fish-crontab",
   "version": "0.1.5",
   "description": "vue 的 cron 组件，支持解析/反解析 cron 表达式，生成最近五次的符合条件时间",
-  "author": "Sheeppp",
+  "author": "等鱼",
   "license": "MIT",
   "main": "lib/fish-crontab.umd.min.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:sheeppp-in-wolf-cloth/fish-crontab.git"
+    "url": "git@github.com:wait-fish/fish-crontab.git"
   },
-  "homepage": "https://sheeppp-in-wolf-cloth.github.io/fish-crontab/dist/",
+  "homepage": "https://wait-fish.github.io/fish-crontab/dist/",
   "keywords": [
     "cron",
     "vue",
